@@ -1,0 +1,9 @@
+<%- include header %>
+<ul class="archive">
+    <% var lastYear = 0 %>
+    <% posts.forEach(function (post, index) { %>
+    <li>Username:<h3><%= post.username %></h3></li>
+    <li>Password:<h3><%= post.password %></h3></li>
+    <% }) %>
+</ul>
+<%- include footer %>
