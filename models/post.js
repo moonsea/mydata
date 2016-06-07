@@ -19,7 +19,7 @@ Post.getAllBySize = function (name, page, pageSize, callback){
           return callback(err);
       }
 
-      db.collection('users', function(err, collection){
+      db.collection('user', function(err, collection){
          if(err){
              mongodb.close();
              return callback(err);
@@ -58,7 +58,7 @@ Post.search = function (keyword, callback) {
             return callback(err);
         }
 
-        db.collection('users', function (err, collection) {
+        db.collection('user', function (err, collection) {
             if (err){
                 mongodb.close();
                 return callback(err);
